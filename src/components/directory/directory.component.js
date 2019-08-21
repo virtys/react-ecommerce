@@ -6,17 +6,17 @@ import { selectDirectorySections } from '../../redux/directory/directory.selecto
 
 import MenuItem from '../menu-item/menu-item.component'
 
-import './directory.styles.scss'
+import {Wrapper} from './directory.styles'
 
 const Directory = ({sections}) => {
   return (
-    <div className="directory-menu">
+    <Wrapper>
       {
         sections.map(({ id, ...otherSectionProps }) => (
           <MenuItem key={id} {...otherSectionProps}/>
         ))
       }
-    </div>
+    </Wrapper>
   )
 }
 
