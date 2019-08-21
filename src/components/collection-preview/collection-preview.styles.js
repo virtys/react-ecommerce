@@ -13,4 +13,7 @@ export const Title = styled.h1`
 export const Preview = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
 `
